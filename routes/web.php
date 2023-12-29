@@ -21,4 +21,8 @@ Route::get('/chart', function () {
     return view('chart');
 });
 
+Route::get('/admin', function () {
+    return view('admin');
+});
+
 Route::get('/chart-data', [ChartController::class, 'getData'])->name('chart-data');
